@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="/AluraChallengeFront/assets/favicon-16x16.png">
+  <title>Adopet - Cadastro</title>
+
+  <link rel="stylesheet" href="../../style.css">
+  <!--Inclui reset-->
+  <link rel="stylesheet" href="../../estilos/Cabecalho/cabecalho.css">
+  <link rel="stylesheet" href="../../estilos/Paginas/Perfil/perfil-principal.css">
+
+
+  <link rel="stylesheet" href="../../estilos/Rodape/rodape.css">
+</head>
+
+<body class="body-perfil">
+  <header class="cabecalho">
+    <nav class="cabecalho__navegacao">
+
+      <a href="../Inicial/index.html">
+        <button class="cabecalho__navegacao--logo cabecalho__efeito">
+        </button>
+      </a>
+
+      <a href="../Home/index.html">
+        <button class="cabecalho__navegacao--home cabecalho__efeito">
+        </button>
+      </a>
+      <a href="../Mensagem/index.html">
+        <button class="cabecalho__navegacao--msg cabecalho__efeito">
+        </button>
+      </a>
+
+    </nav>
+
+    <h2 id="logado" class="cabecalho__logado"></h2>
+
+    <div class="cabecalho__menu">
+
+      <img class="cabecalho__menu--perfil" src="../../assets/img/usuario-perfil.png" alt="Imagem de Perfil">
+
+      <button class="cabecalho__perfil">
+        <a href="../Perfil/index.html" class="cabecalho__perfil--link">Ver Perfil</a>
+      </button>
+
+      <button id="logout" class="cabecalho__logout">Logout</button>
+    </div>
+
+  </header>
+
+  <main class="principal">
+
+    <div class="principal__paragrafos">
+      <p>
+        Esse é o perfil que aparece para responsáveis ou ONGs que recebem sua mensagem.
+      </p>
+
+    </div>
+
+    <form class="principal__formulario">
+      <p class="principal__formulario--paragrafo">Perfil</p>
+
+      <fieldset class="principal__formulario--campos">
+
+        <label for="" class="principal__formulario--label">Foto</label>
+
+        <label for="imagem__perfil">
+          <span class="principal__formulario--imagem">
+
+          </span>
+        </label>
+        <input type="file" name="imagem__perfil" id="imagem__perfil">
+        <span class="principal__formulario--instrucao">Clique na foto para editar</span>
+
+        <label for="" class="principal__formulario--label">Nome</label>
+        <input type="text" id="nome" class="principal__formulario--texto" placeholder="Joana Magalhães" required
+          data-tipo="texto">
+        <span id="erro-nome"></span>
+
+        <label for="" class="principal__formulario--label">Telefone</label>
+        <input type="tel" id="telefone" class="principal__formulario--texto" placeholder="55 11 XXXXXXXXX" required
+          data-tipo="telefone">
+        <span id="erro-telefone"></span>
+
+        <label for="" class="principal__formulario--label">Cidade</label>
+        <input type="text" class="principal__formulario--texto" placeholder="São Paulo" required data-tipo="texto">
+
+        <label for="" class="principal__formulario--label">Mensagem</label>
+        <textarea name="" id="mensagem" cols="30" rows="15" class="principal__formulario--texto"
+          placeholder="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati."></textarea>
+        <span id="erro-mensagem"></span>
+
+      </fieldset>
+
+      <button class="principal__botao botao-de-forms" type="submit">Salvar</button>
+
+    </form>
+
+  </main>
+
+  <footer class="rodape">
+    <span>2022 - Desenvolvido por Alura.</span>
+  </footer>
+
+  <script src="../../js/valida-logado.js" type="module"></script>
+  <script src="../../js/validacoes-perfil.js" type="module"></script>
+  <script src="../../js/perfil-edicao.js" type="module"></script>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="/AluraChallengeFront/assets/favicon-16x16.png">
+  <title>Adopet - Cadastro</title>
+
+  <link rel="stylesheet" href="../../style.css">
+  <!--Inclui reset-->
+  <link rel="stylesheet" href="../../estilos/Cabecalho/cabecalho.css">
+  <link rel="stylesheet" href="../../estilos/Paginas/Mensagem/mensagem-principal.css">
+
+
+  <link rel="stylesheet" href="../../estilos/Rodape/rodape.css">
+</head>
+
+<body class="body-mensagem">
+  <header class="cabecalho cabecalho-sem-logo">
+    <nav class="cabecalho__navegacao">
+
+      <a href="../Inicial/index.html">
+        <button class="cabecalho__navegacao--logo cabecalho__efeito">
+        </button>
+      </a>
+
+      <a href="../Home/index.html">
+        <button class="cabecalho__navegacao--home cabecalho__efeito">
+        </button>
+      </a>
+      <a href="../Mensagem/index.html">
+        <button class="cabecalho__navegacao--msg cabecalho__efeito">
+        </button>
+      </a>
+
+    </nav>
+
+    <h2 id="logado" class="cabecalho__logado"></h2>
+
+    <div class="cabecalho__menu">
+
+      <img class="cabecalho__menu--perfil" src="../../assets/img/usuario.png" alt="Imagem de Perfil">
+
+      <button class="cabecalho__perfil">
+        <a href="../Perfil/index.html" class="cabecalho__perfil--link">Ver Perfil</a>
+      </button>
+
+      <button id="logout" class="cabecalho__logout">Logout</button>
+    </div>
+
+  </header>
+
+  <main class="principal">
+
+    <div class="principal__paragrafos">
+      <p>
+        Envie uma mensagem para a pessoa ou instituição que está cuidado do animal:
+      </p>
+    </div>
+
+    <form class="principal__formulario">
+
+      <fieldset class="principal__formulario--campos">
+
+        <label for="" class="principal__formulario--label">Nome</label>
+        <input type="text" id="nome" class="principal__formulario--texto" placeholder="Insira seu nome completo"
+          required data-tipo="texto">
+        <span id="erro-nome"></span>
+
+        <label for="" class="principal__formulario--label">Telefone</label>
+        <input type="tel" id="telefone" class="principal__formulario--texto"
+          placeholder="Insira seu telefone e/ou whatsapp" pattern="(\(?\d{2}\)?\s)(\d{4,5}\-\d{4})"
+          title="Formatos aceitos para telefone: (16) 91231-6165 - (16) 3231-6165 - 16 91231-6165 - 16 3231-6165"
+          required>
+        <span id="erro-telefone"></span>
+
+        <label for="" class="principal__formulario--label">Nome do animal</label>
+        <input type="text" id="nome-animal" class="principal__formulario--texto"
+          placeholder="Por qual animal você se interessou?" required data-tipo="texto">
+        <span id="erro-nome-animal"></span>
+
+        <label for="" class="principal__formulario--label">Mensagem</label>
+        <input type="text" id="mensagem" class="principal__formulario--texto" placeholder="Escreva sua mensagem."
+          required>
+        <span id="erro-mensagem"></span>
+
+      </fieldset>
+
+      <button class="principal__formulario--botao botao-de-forms" type="submit">Enviar</button>
+
+    </form>
+
+  </main>
+
+  <footer class="rodape">
+    <span>2022 - Desenvolvido por Alura.</span>
+  </footer>
+
+  <script src="../../js/valida-logado.js" type="module"></script>
+  <script src="../../js/validacoes-mensagem.js" type="module"></script>
+</body>
+
+</html>

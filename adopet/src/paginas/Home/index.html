@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="/AluraChallengeFront/assets/favicon-16x16.png">
+  <title>Adopet - Home</title>
+
+  <link rel="stylesheet" href="../../style.css">
+  <!--Inclui reset-->
+  <link rel="stylesheet" href="../../estilos/Cabecalho/cabecalho.css">
+  <link rel="stylesheet" href="../../estilos/Paginas/Home/home-principal.css">
+  <link rel="stylesheet" href="../../estilos/Rodape/rodape.css">
+</head>
+
+<body class="body-home">
+  <header class="cabecalho">
+    <nav class="cabecalho__navegacao">
+
+      <a href="../Inicial/index.html">
+        <button class="cabecalho__navegacao--logo cabecalho__efeito">
+        </button>
+      </a>
+
+      <a href="../Home/index.html">
+        <button class="cabecalho__navegacao--home cabecalho__efeito">
+        </button>
+      </a>
+      <a href="../Mensagem/index.html">
+        <button class="cabecalho__navegacao--msg cabecalho__efeito">
+        </button>
+      </a>
+
+    </nav>
+
+    <h2 id="logado" class="cabecalho__logado"></h2>
+
+    <div class="cabecalho__menu">
+
+      <img class="cabecalho__menu--perfil" src="../../assets/img/usuario.png" alt="Imagem de Perfil">
+
+      <button class="cabecalho__perfil">
+        <a href="../Perfil/index.html" class="cabecalho__perfil--link">Ver Perfil</a>
+      </button>
+
+      <button id="logout" class="cabecalho__logout">Logout</button>
+    </div>
+
+  </header>
+
+  <main class="principal">
+
+    <div class="principal__paragrafos">
+      <p>Olá! Veja os amigos disponíveis para adoção!</p>
+    </div>
+
+    
+    <div class="principal__container" data-pets>
+      
+      <!-- Para quando for rodar/testar API:
+      1) Envolver a Versão ESTÁTICA DOS PETS - Colocar o fechamento DESTE COMENTÁRIO "--SETA" ANTES DO FECHAMENTO DA DIV DE CLASSE "principal_container";
+
+      2) Logar no site após colocar no terminal o comando: "npx json-server --watch db.json";
+
+      3) Maiores dúvidas ler o README do projeto no GitHub!!!
+
+     -->
+
+      <div class="principal__imagem">
+        <img src="../../assets/img/pets/pet1.png" alt="Foto do pet cachorro" class="principal__imagem--pet">
+        <div class="principal__dados">
+          <h3 class="principal__dados--nome">Dunga</h3>
+          <span class="principal__dados--descricao">
+            2 anos <br />
+            Porte pequeno <br />
+            Calmo e educado
+          </span>
+          <span class="principal__dados--cidade">
+            Rio de Janeiro (RJ)
+          </span>
+          <a href="../Mensagem/index.html" class="principal__dados--contato contato-container">
+            <img src="../../assets/img/icomsg.png" alt="Ícone mensagem" class="contato-container__icomsg">
+            <span class="contato-container__texto">Falar com responsável</span>
+          </a>
+        </div>
+      </div>
+      <div class="principal__imagem">
+        <img src="../../assets/img/pets/pet2.png" alt="Foto da pet gata" class="principal__imagem--pet">
+        <div class="principal__dados">
+          <h3 class="principal__dados--nome">Felícia</h3>
+          <span class="principal__dados--descricao">
+            3 meses <br />
+            Porte pequeno <br />
+            Ativa e carinhosa
+          </span>
+          <span class="principal__dados--cidade">
+            Nova Iguaçu (RJ)
+          </span>
+          <a href="../Mensagem/index.html" class="principal__dados--contato contato-container">
+            <img src="../../assets/img/icomsg.png" alt="Ícone mensagem" class="contato-container__icomsg">
+            <span class="contato-container__texto">Falar com responsável</span>
+          </a>
+        </div>
+      </div>
+      <div class="principal__imagem">
+        <img src="../../assets/img/pets/pet3.png" alt="Foto do pet cachorro" class="principal__imagem--pet">
+        <div class="principal__dados">
+          <h3 class="principal__dados--nome">Sirius</h3>
+          <span class="principal__dados--descricao">
+            6 meses <br />
+            Porte grande <br />
+            Ativo e educado
+          </span>
+          <span class="principal__dados--cidade">
+            Duque de Caxias (RJ)
+          </span>
+          <a href="../Mensagem/index.html" class="principal__dados--contato contato-container">
+            <img src="../../assets/img/icomsg.png" alt="Ícone mensagem" class="contato-container__icomsg">
+            <span class="contato-container__texto">Falar com responsável</span>
+          </a>
+        </div>
+      </div>
+      <div class="principal__imagem">
+        <img src="../../assets/img/pets/pet4.png" alt="Foto da pet cachorra" class="principal__imagem--pet">
+        <div class="principal__dados">
+          <h3 class="principal__dados--nome">Fiona</h3>
+          <span class="principal__dados--descricao">
+            3 anos <br />
+            Porte pequeno <br />
+            Calma e carinhosa
+          </span>
+          <span class="principal__dados--cidade">
+            São Gonçalo (RJ)
+          </span>
+          <a href="../Mensagem/index.html" class="principal__dados--contato contato-container">
+            <img src="../../assets/img/icomsg.png" alt="Ícone mensagem" class="contato-container__icomsg">
+            <span class="contato-container__texto">Falar com responsável</span>
+          </a>
+        </div>
+      </div>
+      <div class="principal__imagem">
+        <img src="../../assets/img/pets/pet5.png" alt="Foto do pet cachorro" class="principal__imagem--pet">
+        <div class="principal__dados">
+          <h3 class="principal__dados--nome">Sid</h3>
+          <span class="principal__dados--descricao">
+            8 meses <br />
+            Porte médio/grande <br />
+            Brincalhão e amável
+          </span>
+          <span class="principal__dados--cidade">
+            Rio de Janeiro (RJ)
+          </span>
+          <a href="../Mensagem/index.html" class="principal__dados--contato contato-container">
+            <img src="../../assets/img/icomsg.png" alt="Ícone mensagem" class="contato-container__icomsg">
+            <span class="contato-container__texto">Falar com responsável</span>
+          </a>
+        </div>
+      </div>
+      <div class="principal__imagem">
+        <img src="../../assets/img/pets/pet6.png" alt="Foto do pet gato" class="principal__imagem--pet">
+        <div class="principal__dados">
+          <h3 class="principal__dados--nome">Yoda</h3>
+          <span class="principal__dados--descricao">
+            1 ano <br />
+            Porte médio <br />
+            Ativo e carinhoso
+          </span>
+          <span class="principal__dados--cidade">
+            Nova Iguaçu (RJ)
+          </span>
+          <a href="../Mensagem/index.html" class="principal__dados--contato contato-container">
+            <img src="../../assets/img/icomsg.png" alt="Ícone mensagem" class="contato-container__icomsg">
+            <span class="contato-container__texto">Falar com responsável</span>
+          </a>
+        </div>
+      </div>
+      <div class="principal__imagem">
+        <img src="../../assets/img/pets/pet7.png" alt="Foto da pet gata" class="principal__imagem--pet">
+        <div class="principal__dados">
+          <h3 class="principal__dados--nome">Lua</h3>
+          <span class="principal__dados--descricao">
+            6 meses <br />
+            Porte médio <br />
+            Ativa e carinhosa
+          </span>
+          <span class="principal__dados--cidade">
+            Duque de Caxias (RJ)
+          </span>
+          <a href="../Mensagem/index.html" class="principal__dados--contato contato-container">
+            <img src="../../assets/img/icomsg.png" alt="Ícone mensagem" class="contato-container__icomsg">
+            <span class="contato-container__texto">Falar com responsável</span>
+          </a>
+        </div>
+      </div>
+      <div class="principal__imagem">
+        <img src="../../assets/img/pets/pet8.png" alt="Foto da pet cachorra" class="principal__imagem--pet">
+        <div class="principal__dados">
+          <h3 class="principal__dados--nome">Amora</h3>
+          <span class="principal__dados--descricao">
+            45 dias <br />
+            Porte grande <br />
+            Calma e carinhosa
+          </span>
+          <span class="principal__dados--cidade">
+            São Gonçalo (RJ)
+          </span>
+          <a href="../Mensagem/index.html" class="principal__dados--contato contato-container">
+            <img src="../../assets/img/icomsg.png" alt="Ícone mensagem" class="contato-container__icomsg">
+            <span class="contato-container__texto">Falar com responsável</span>
+          </a>
+        </div>
+      </div>
+      <div class="principal__imagem">
+        <img src="../../assets/img/pets/pet9.png" alt="" class="principal__imagem--pet">
+        <div class="principal__dados">
+          <h3 class="principal__dados--nome">Zelda</h3>
+          <span class="principal__dados--descricao">
+            5 meses <br />
+            Porte médio <br />
+            Ativa e amável
+          </span>
+          <span class="principal__dados--cidade">
+            Rio de Janeiro (RJ)
+          </span>
+          <a href="../Mensagem/index.html" class="principal__dados--contato contato-container">
+            <img src="../../assets/img/icomsg.png" alt="Ícone mensagem" class="contato-container__icomsg">
+            <span class="contato-container__texto">Falar com responsável</span>
+          </a>
+        </div>
+      </div>
+ 
+
+    </div>
+
+  </main>
+
+  <footer class="rodape">
+    <span>2022 - Desenvolvido por Alura.</span>
+  </footer>
+
+  <script src="../../js/valida-logado.js" type="module"></script>
+  <script src="../../js/controller/lista-pets-controller.js" type="module"></script>
+</body>
+
+</html>
