@@ -1,3 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=Poppins:wght@400;500;600&display=swap');
+
+:root {
+  --cor-aviso: #ff0000;
+  --cor-azul: #3772FF;
+  --cor-azul-esverdeado: #36D6AD;
+  --cor-branca: #FFFFFF;
+  --cor-cinza: #737380;
+  --cor-cinza-claro: #BCBCBC;
+  --cor-cinza-claro-fundos: #F6F6F6;
+  --cor-coral: #FC7071;
+  --cor-coral-fraca: #FF9D9E;
+  --cor-creme: #FCF0E3;
+  --cor-preta: #000000;
+
+  --fonte-titulo: 'IBM Plex Sans';
+  --fonte-geral: 'Poppins'
+}
+
+/*CONFIGURAÇÕES QUE JÁ VINHAM NO REACT-APP */
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +25,367 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/*-------------------------------------------------------
+
+Configurações do Body do projeto + reset:*/
+
+/*CONFIGURAÇÕES GERAIS DE BG DO BODY:*/
+
+.body-inicial {
+  background-color: var(--cor-azul);
+  background-image: url('./assets/formas/forma1.png'), url('./assets/formas/forma2.png');
+  background-position: top left, center right;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 352px 295px, 84px 415px;
+
+  height: 917px;
+}
+
+.body-cadastro-login {
+  background-image: url('./assets/img/patas.png'), url('./assets/formas/forma1.png'), url('./assets/formas/forma2-1.png');
+  background-position: top right, top left, center left;
+  background-repeat: no-repeat;
+  background-size: 127px 227px, 352px 295px, 83px 415px;
+
+  background-position-y: top, top, 368px;
+
+  height: 917px;
+
+}
+
+.body-home {
+  background-image: url('./assets/formas/forma1.png');
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: 352px 295px;
+
+  background-position-y: top;
+  background-position-x: left;
+
+  height: 917px;
+}
+
+.body-mensagem {
+  background-image: url('./assets/formas/forma1.png');
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: 352px 295px;
+
+  background-position-y: top;
+  background-position-x: left;
+
+  height: 917px;
+}
+
+.body-perfil {
+  background-image: url('./assets/formas/forma1.png');
+  background-repeat: no-repeat;
+  background-size: 352px 295px;
+
+  background-position-y: top;
+  background-position-x: left;
+
+  height: 917px;
+}
+
+/*BOTÕES*/
+
+.botao-pag-inicial {
+  background-color: var(--cor-coral);
+  border-radius: 6px;
+  color: var(--cor-branca);
+
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25));
+  font-family: var(--fonte-geral);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+
+  height: 40px;
+  line-height: 24px;
+
+  width: 180px;
+}
+
+.botao-pag-inicial:hover {
+  background-color: var(--cor-coral-fraca);
+  color: var(--cor-preta);
+  transition: 800ms;
+}
+
+.botao-de-forms {
+  background-color: var(--cor-coral);
+  border-radius: 6px;
+  color: var(--cor-branca);
+
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25));
+  font-family: var(--fonte-geral);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+
+  height: 40px;
+  line-height: 24px;
+
+  width: 148px;
+}
+
+.botao-de-forms:hover {
+  background-color: var(--cor-azul);
+  color: var(--cor-preta);
+  transition: 800ms;
+}
+
+/*AJUSTES RESPONSIVOS*/
+
+@media screen and (min-width: 768px) {
+
+  .botao-pag-inicial {
+      background-color: var(--cor-coral);
+      border-radius: 6px;
+      color: var(--cor-branca);
+
+      font-family: var(--fonte-geral);
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+
+      height: 48px;
+      line-height: 24px;
+
+      width: 344px;
+  }
+
+  .botao-de-forms {
+      font-size: 18px;
+      width: 164px;
+  }
+
+  .body-inicial {
+      background-color: var(--cor-azul);
+      background-size: 561px 470px, 134.5px 664px;
+
+      height: 1200px;
+  }
+
+  .body-cadastro-login {
+      background-image: url('./assets/img/patas.png'), url('./assets/formas/forma1.png'), url('./assets/formas/forma2.png');
+      background-position: top right, top left, center right;
+      background-repeat: no-repeat;
+      background-size: 224px 338px, 561px 470px, 135px 664px;
+
+      background-position-y: top, top, 268px;
+
+      height: 1200px;
+  }
+
+  .body-perfil {
+      background-image: url('./assets/formas/forma1.png'), url('./assets/formas/forma2.png');
+      background-size: 561px 470px, 134px 664px;
+
+      background-position-y: top, center;
+      background-position-x: left, right;
+
+      height: 1255px;
+  }
+
+  .body-home {
+      background-image: url('./assets/formas/forma1.png'), url('./assets/formas/forma2.png');
+      background-size: 561px 470px, 0px 0px;
+
+      background-position-y: top, center;
+      background-position-x: left;
+
+      height: 1200px;
+  }
+
+  .body-mensagem {
+      background-image: url('./assets/formas/forma1.png'), url('./assets/formas/forma2.png');
+      background-size: 561px 470px, 134px 664px;
+
+      background-position-y: top, center;
+      background-position-x: left, right;
+
+      height: 1200px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .botao-pag-inicial {
+      width: 362px;
+  }
+
+  .botao-de-forms {
+      width: 174px;
+  }
+
+  .body-inicial {
+      background-color: var(--cor-azul);
+      height: 1025px;
+  }
+
+  .body-cadastro-login {
+      height: 1025px;
+      background-position-y: top, top, 180px;
+  }
+
+  .body-perfil {
+      background-size: 561px 470px, 134px 664px;
+
+      background-position-y: top, center;
+      background-position-x: left, right;
+      height: 1025px;
+
+      height: 1148px;
+  }
+
+  .body-home {
+      background-size: 561px 470px, 134px 664px;
+
+      background-position-y: top, center;
+      background-position-x: left, right;
+      height: 1025px;
+  }
+}
+
+
+/*CONFIGURAÇÕES RESET:*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }

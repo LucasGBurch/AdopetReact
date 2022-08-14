@@ -1,0 +1,208 @@
+#erro-mensagem {
+    align-items: center;
+    color: var(--cor-aviso);
+    display: none;
+    line-height: 20px;
+    margin-bottom: 6px;
+    font-size: 12px;
+}
+
+#erro-nome {
+    align-items: center;
+    color: var(--cor-aviso);
+    display: none;
+    font-size: 12px;
+    margin-bottom: 6px;
+}
+
+#erro-nome-animal {
+    align-items: center;
+    color: var(--cor-aviso);
+    display: none;
+    font-size: 12px;
+    margin-bottom: 6px;
+}
+
+#erro-telefone {
+    align-items: center;
+    color: var(--cor-aviso);
+    display: none;
+    font-size: 12px;
+    line-height: 20px;
+    margin-bottom: 6px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.input-container--invalido {
+    color: var(--cor-aviso);
+    margin-bottom: 0.5rem;
+}
+
+.input-mensagem-erro {
+    display: none;
+    font-size: 12px;
+}
+
+.input-container--invalido .input-mensagem-erro {
+    color: var(--cor-aviso);
+    display: block;
+}
+
+.principal {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--fonte-geral);
+    height: 736px;
+    min-width: 350px;
+}
+
+.principal__paragrafos {
+    color: var(--cor-azul);
+    font-family: var(--fonte-geral);
+    font-weight: 400;
+    font-size: 16px;
+    height: 60px;
+    line-height: 21px;
+
+    text-align: center;
+    width: 226px;
+}
+
+.principal__formulario {
+    align-items: center;
+    background-color: var(--cor-cinza-claro-fundos);
+    display: flex;
+    flex-direction: column;
+    height: 676px;
+    margin: 24px 24px 16px 24px;
+    padding: 32px 16px;
+    width: 312px;
+}
+
+.principal__formulario--campos {
+    align-items: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.principal__formulario--label {
+    color: var(--cor-azul);
+    font-family: var(--fonte-geral);
+    font-size: 16px;
+    font-weight: 600;
+    height: 25px;
+    line-height: 24px;
+    margin-bottom: 8px;
+}
+
+.principal__formulario--label:last-child {
+    margin-bottom: 16px;
+}
+
+.principal__formulario--texto {
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    color: var(--cor-preta);
+    font-family: var(--fonte-geral);
+    font-size: 14px;
+    font-weight: 400;
+    height: 24px;
+    line-height: 16px;
+    margin-bottom: 16px;
+    padding: 12px 16px;
+    /*Precisei diminuir esse padding da altura/largura*/
+    width: 248px;
+}
+
+.principal__formulario--texto:last-child {
+    height: 140px;
+    margin-bottom: 32px;
+}
+
+.principal__formulario--texto:last-child::placeholder { 
+    transform:translateY(-280%);
+}
+
+@media screen and (min-width: 768px) {
+    .principal {
+        height: 822px;
+        margin-top: 11px;
+    }
+
+    .principal__paragrafos {
+        font-size: 18px;
+        height: 52px;
+        line-height: 26px;
+    
+        text-align: center;
+        width: 525px;
+    }
+
+    .principal__formulario {
+        height: 759px;
+        margin: 40px 24px 0px 16px;
+        padding-bottom: 0;
+        width: 524px;
+    }
+
+    .principal__formulario--label:last-child {
+        margin-bottom: 8px;
+    }
+    
+    .principal__formulario--texto {
+        font-weight: 400;
+        height: 24px;
+        line-height: 16px;
+        width: 460px;
+    }
+
+    .principal__formulario--texto:last-child {
+        height: 148px;
+        margin-bottom: 32px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .principal {
+        height: 836px;
+    }
+
+    .principal__paragrafos {
+        width: 492px;
+    }
+
+    .principal__formulario {
+        height: 696px;
+        padding: 27px 30px 32px 30px;
+        width: 552px;
+    }
+
+    .principal__formulario--label {
+        height: 25px;
+        line-height: 24px;
+    }
+    
+    .principal__formulario--texto {
+        font-weight: 400;
+        line-height: 16px;
+        margin-bottom: 16px;
+    }
+
+    .principal__botao {
+        margin-bottom: 68px;
+    }
+}
+
+@media screen and (min-width: 1350px) {
+    .principal {
+        height: 850px;
+        padding-top: 66px;
+    }
+}

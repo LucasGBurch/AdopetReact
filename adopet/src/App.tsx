@@ -1,32 +1,27 @@
-import React from 'react';
-import './App.css';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import './index.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 
+import Cabecalho from './componentes/Cabecalho/';
+import Rodape from './componentes/Rodape/';
+import Inicial from './paginas/Inicial/';
+import Cadastro from './paginas/Cadastro/';
 
 function App() {
+
   return (
     <>
       <Router>
-        <Route path='/'>
+        <Cabecalho />
+        <Routes>
 
-        </Route>
-        <Route path='/Cadastro'>
+          <Route path='/' element={<Inicial />} />
 
-        </Route>
-        <Route path='/Login'>
+          <Route path='/cadastro' element={<Cadastro />} />
 
-        </Route>
-        <Route path='/Home'>
-
-        </Route>
-        <Route path='/Mensagem'>
-
-        </Route>
-        <Route path='/Perfil'>
-
-        </Route>
-
+        </Routes>
+        <Rodape />
       </Router>
     </>
   );
