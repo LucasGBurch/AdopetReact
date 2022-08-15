@@ -1,0 +1,23 @@
+.botao-de-forms {
+  background-color: var(--cor-coral);
+  border-radius: 6px;
+  color: var(--cor-branca);
+
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25));
+  font-family: var(--fonte-geral);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+
+  height: 40px;
+  line-height: 24px;
+
+  width: 148px;
+}
+
+.botao-de-forms:hover {
+  background-color: var(--cor-azul);
+  color: var(--cor-preta);
+  transition: 800ms;
+}
+

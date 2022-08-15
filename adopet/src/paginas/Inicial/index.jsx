@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import './Inicial.css';
 import '../../index.css';
+import BotaoInicial from "../../componentes/BotaoInicial";
 
 const Inicial = () => {
 
@@ -27,10 +28,17 @@ const Inicial = () => {
           Adotar pode mudar uma vida. Que tal buscar seu novo melhor amigo hoje?
           Vem com a gente!
         </p>
-        <Link to="/login"><button className="principal__elementos--botoes botao-pag-inicial">Já tenho conta</button></Link>
+        <Link to="/login">
+          <BotaoInicial>
+            Já tenho conta
+          </BotaoInicial>
+        </Link>
 
-        <Link to="/cadastro"><button className="principal__elementos--botoes botao-pag-inicial">Quero me
-          cadastrar</button></Link>
+        <Link to="/cadastro">
+        <BotaoInicial>
+            Quero me cadastrar
+          </BotaoInicial>
+        </Link>
 
       </section>
 

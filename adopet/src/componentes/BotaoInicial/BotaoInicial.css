@@ -1,0 +1,22 @@
+.botao-pag-inicial {
+  background-color: var(--cor-coral);
+  border-radius: 6px;
+  color: var(--cor-branca);
+
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25));
+  font-family: var(--fonte-geral);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+
+  height: 40px;
+  line-height: 24px;
+
+  width: 180px;
+}
+
+.botao-pag-inicial:hover {
+  background-color: var(--cor-coral-fraca);
+  color: var(--cor-preta);
+  transition: 800ms;
+}
