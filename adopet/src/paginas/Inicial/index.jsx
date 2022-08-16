@@ -12,19 +12,17 @@ const Inicial = () => {
   }, []);
 
   return (
-    <main className="principal">
+    <main className="inicial container">
 
-      <section className="principal__elementos">
+      <section className="inicial__elementos">
 
-        <div className="principal__elementos--textos">
-          <div className="logo"></div>
-          <h3 className="subtitulo">Boas-Vindas!</h3>
-        </div>
+        <div className="inicial__elementos--logo"></div>
+        <h3 className="inicial__elementos--subtitulo">Boas-Vindas!</h3>
 
-        <p className="principal__elementos--texto">
+        <p className="inicial__elementos--texto">
           Que tal mudar sua vida adotando seu novo melhor amigo? Vem com a gente!
         </p>
-        <p className="principal__elementos--texto-maior">
+        <p className="inicial__elementos--texto-maior">
           Adotar pode mudar uma vida. Que tal buscar seu novo melhor amigo hoje?
           Vem com a gente!
         </p>
@@ -35,14 +33,14 @@ const Inicial = () => {
         </Link>
 
         <Link to="/cadastro">
-        <BotaoInicial>
+          <BotaoInicial>
             Quero me cadastrar
           </BotaoInicial>
         </Link>
 
       </section>
 
-      <div className="principal__ilustracao"></div>
+      <div className="inicial__ilustracao"></div>
 
     </main>
   );

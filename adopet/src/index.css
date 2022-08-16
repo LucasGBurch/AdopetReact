@@ -46,8 +46,9 @@ Configurações do Body do projeto + reset:*/
   background-repeat: no-repeat, no-repeat;
   background-size: 352px 295px, 84px 415px;
 
+  background-position-y: top, 199px;
+
   height: 917px;
-  /*-168px cabecalho e - 104 footer = -172px em relação ao Adopet estático*/
 }
 
 .body-cadastro-login {
@@ -102,112 +103,93 @@ Configurações do Body do projeto + reset:*/
 
 @media screen and (min-width: 768px) {
 
-  .botao-pag-inicial {
-      background-color: var(--cor-coral);
-      border-radius: 6px;
-      color: var(--cor-branca);
-
-      font-family: var(--fonte-geral);
-      font-size: 18px;
-      font-style: normal;
-      font-weight: 600;
-
-      height: 48px;
-      line-height: 24px;
-
-      width: 344px;
-  }
-
   .botao-de-forms {
-      font-size: 18px;
-      width: 164px;
+    font-size: 18px;
+    width: 164px;
   }
 
   .body-inicial {
-      background-color: var(--cor-azul);
-      background-size: 561px 470px, 134.5px 664px;
+    background-size: 561px 470px, 134.5px 664px;
 
-      height: 1200px;
+    background-position-y: top, 268px;
+
+    height: 1200px;
   }
 
   .body-cadastro-login {
-      background-image: url('./assets/img/patas.png'), url('./assets/formas/forma1.png'), url('./assets/formas/forma2.png');
-      background-position: top right, top left, center right;
-      background-repeat: no-repeat;
-      background-size: 224px 338px, 561px 470px, 135px 664px;
+    background-image: url('./assets/img/patas.png'), url('./assets/formas/forma1.png'), url('./assets/formas/forma2.png');
+    background-position: top right, top left, center right;
+    background-repeat: no-repeat;
+    background-size: 224px 338px, 561px 470px, 135px 664px;
 
-      background-position-y: top, top, 268px;
+    background-position-y: top, top, 268px;
 
-      height: 1200px;
+    height: 1200px;
   }
 
   .body-perfil {
-      background-image: url('./assets/formas/forma1.png'), url('./assets/formas/forma2.png');
-      background-size: 561px 470px, 134px 664px;
+    background-image: url('./assets/formas/forma1.png'), url('./assets/formas/forma2.png');
+    background-size: 561px 470px, 134px 664px;
 
-      background-position-y: top, center;
-      background-position-x: left, right;
+    background-position-y: top, center;
+    background-position-x: left, right;
 
-      height: 1255px;
+    height: 1255px;
   }
 
   .body-home {
-      background-image: url('./assets/formas/forma1.png'), url('./assets/formas/forma2.png');
-      background-size: 561px 470px, 0px 0px;
+    background-image: url('./assets/formas/forma1.png'), url('./assets/formas/forma2.png');
+    background-size: 561px 470px, 0px 0px;
 
-      background-position-y: top, center;
-      background-position-x: left;
+    background-position-y: top, center;
+    background-position-x: left;
 
-      height: 1200px;
+    height: 1200px;
   }
 
   .body-mensagem {
-      background-image: url('./assets/formas/forma1.png'), url('./assets/formas/forma2.png');
-      background-size: 561px 470px, 134px 664px;
+    background-image: url('./assets/formas/forma1.png'), url('./assets/formas/forma2.png');
+    background-size: 561px 470px, 134px 664px;
 
-      background-position-y: top, center;
-      background-position-x: left, right;
+    background-position-y: top, center;
+    background-position-x: left, right;
 
-      height: 1200px;
+    height: 1200px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .botao-pag-inicial {
-      width: 362px;
-  }
 
   .botao-de-forms {
-      width: 174px;
+    width: 174px;
   }
 
   .body-inicial {
-      background-color: var(--cor-azul);
-      height: 1025px;
-      /*-168px cabecalho e - 80 footer*/
+    background-position-y: top, 180px;
+    height: 1025px;
   }
 
   .body-cadastro-login {
-      height: 1025px;
-      background-position-y: top, top, 180px;
+    height: 1025px;
+    background-position-y: top, top, 180px;
   }
 
   .body-perfil {
-      background-size: 561px 470px, 134px 664px;
+    background-size: 561px 470px, 134px 664px;
 
-      background-position-y: top, center;
-      background-position-x: left, right;
-      height: 1025px;
+    background-position-y: top, center;
+    background-position-x: left, right;
+    height: 1025px;
 
-      height: 1148px;
+    height: 1148px;
   }
 
   .body-home {
-      background-size: 561px 470px, 134px 664px;
+    background-size: 561px 470px, 134px 664px;
 
-      background-position-y: top, center;
-      background-position-x: left, right;
-      height: 1025px;
+    background-position-y: top, center;
+    background-position-x: left, right;
+    height: 1025px;
   }
 }
 

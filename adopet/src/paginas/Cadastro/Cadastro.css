@@ -67,7 +67,7 @@
     text-align: center;
 }
 
-.principal {
+.cadastro {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -76,7 +76,7 @@
     min-width: 350px;
 }
 
-.principal__paragrafos {
+.cadastro__paragrafos {
     align-items: center;
     color: var(--cor-azul);
     display: flex;
@@ -92,7 +92,7 @@
     width: 312px;
 }
 
-.principal__logo {
+.cadastro__logo {
     background-image: url('../../assets/logoAdopet.png');
     background-position: top center;
     background-repeat: no-repeat;
@@ -103,7 +103,7 @@
     width: 143px;
 }
 
-.principal__formulario {
+.cadastro__formulario {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -114,13 +114,13 @@
     width: 312px;
 }
 
-.principal__formulario--campos {
+.cadastro__formulario--campos {
     align-items: center;
     display: flex;
     flex-direction: column;
 }
 
-.principal__formulario--label {
+.cadastro__formulario--label {
     color: var(--cor-cinza);
     font-family: var(--fonte-geral);
     font-size: 16px;
@@ -131,7 +131,7 @@
     text-align: center;
 }
 
-.principal__formulario--texto {
+.cadastro__formulario--texto {
     background-color: var(--cor-cinza-claro-fundos);
     border: none;
     border-radius: 6px;
@@ -147,21 +147,21 @@
     width: 312px;
 }
 
-.principal__formulario--texto:last-child {
+.cadastro__formulario--texto:last-child {
     margin-bottom: 0px;
 }
 
 @media screen and (min-width: 768px) {
-    .principal__logo {
+    .cadastro__logo {
         height: 62px;
         width: 252px;
     }
 
-    .principal {
+    .cadastro {
         height: 900px;
     }
 
-    .principal__paragrafos {
+    .cadastro__paragrafos {
         font-size: 18px;
         height: 78px;
         line-height: 26px;
@@ -170,17 +170,17 @@
         width: 525px;
     }
 
-    .principal__logo {
+    .cadastro__logo {
         margin-bottom: 40px;
     }
 
-    .principal__formulario {
+    .cadastro__formulario {
         height: 680px;
         padding: 0 40px;
         width: 344px;
     }
 
-    .principal__formulario--label {
+    .cadastro__formulario--label {
         font-size: 18px;
         font-weight: 400;
         height: 24px;
@@ -188,7 +188,7 @@
         margin-bottom: 8px;
     }
     
-    .principal__formulario--texto {
+    .cadastro__formulario--texto {
         font-size: 14px;
         font-weight: 400;
         height: 40px;
@@ -197,39 +197,39 @@
         width: 344px;
     }
 
-    .principal__formulario--botao {
+    .cadastro__formulario--botao {
         margin-top: 16px;
     }
 }
 
 @media screen and (min-width: 1024px) {
-    .principal__logo {
+    .cadastro__logo {
         height: 64px;
         width: 260px;
     }
 
-    .principal {
+    .cadastro {
         height: 950px;
     }
 
-    .principal__paragrafos {
+    .cadastro__paragrafos {
         padding-bottom: 16px;
         width: 552px;
     }
 
-    .principal__formulario {
+    .cadastro__formulario {
         margin-top: 40px;
         width: 552px;
     }
 
-    .principal__formulario--label {
+    .cadastro__formulario--label {
         font-size: 18px;
         font-weight: 600;
         height: 25px;
         line-height: 24px;
     }
     
-    .principal__formulario--texto {
+    .cadastro__formulario--texto {
         font-size: 16px;
         font-weight: 400;
         height: 40px;
@@ -242,7 +242,7 @@
         width: 362px;
     }
 
-    .principal__formulario--botao {
+    .cadastro__formulario--botao {
         margin-top: 24px;
     }
 }

@@ -20,3 +20,28 @@
   color: var(--cor-preta);
   transition: 800ms;
 }
+
+@media screen and (min-width: 768px) {
+
+  .botao-pag-inicial {
+      background-color: var(--cor-coral);
+      border-radius: 6px;
+      color: var(--cor-branca);
+
+      font-family: var(--fonte-geral);
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+
+      height: 48px;
+      line-height: 24px;
+
+      width: 344px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .botao-pag-inicial {
+      width: 362px;
+  }
+}
