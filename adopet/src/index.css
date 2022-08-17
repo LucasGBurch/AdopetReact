@@ -131,7 +131,7 @@ Configurações do Body do projeto + reset:*/
     background-image: url('./assets/formas/forma1.png'), url('./assets/formas/forma2.png');
     background-size: 561px 470px, 134px 664px;
 
-    background-position-y: top, center;
+    background-position-y: top, 268px;
     background-position-x: left, right;
 
     height: 1255px;
@@ -151,7 +151,7 @@ Configurações do Body do projeto + reset:*/
     background-image: url('./assets/formas/forma1.png'), url('./assets/formas/forma2.png');
     background-size: 561px 470px, 134px 664px;
 
-    background-position-y: top, center;
+    background-position-y: top, 268px;
     background-position-x: left, right;
 
     height: 1200px;
@@ -174,10 +174,14 @@ Configurações do Body do projeto + reset:*/
     background-position-y: top, top, 180px;
   }
 
+  .body-mensagem {
+    background-position-y: top, 180px;
+  }
+
   .body-perfil {
     background-size: 561px 470px, 134px 664px;
 
-    background-position-y: top, center;
+    background-position-y: top, 180px;
     background-position-x: left, right;
     height: 1025px;
 
@@ -187,7 +191,7 @@ Configurações do Body do projeto + reset:*/
   .body-home {
     background-size: 561px 470px, 134px 664px;
 
-    background-position-y: top, center;
+    background-position-y: top, 180px;
     background-position-x: left, right;
     height: 1025px;
   }

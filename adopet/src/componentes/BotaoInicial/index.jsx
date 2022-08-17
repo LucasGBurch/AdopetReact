@@ -3,7 +3,7 @@ import './BotaoInicial.css';
 
 const BotaoInicial = (props) => {
   return (
-    <button className="principal__elementos--botoes botao-pag-inicial">{props.children}</button>
+    <button className="inicial__elementos--botoes botao-pag-inicial">{props.children}</button>
   );
 };
 

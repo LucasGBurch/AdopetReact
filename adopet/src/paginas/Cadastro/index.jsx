@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import Formulario from "../../componentes/Formulario";
 import './Cadastro.css';
 
 const Cadastro = () => {
@@ -19,49 +20,7 @@ const Cadastro = () => {
       </p>
     </div>
 
-    <form class="cadastro__formulario">
-
-      <div id="msg-erro"></div>
-      <div id="msg-sucesso"></div>
-
-      <fieldset class="cadastro__formulario--campos">
-
-        <div class="input-container">
-          <label for="" id="label-email" class="cadastro__formulario--label">Email</label>
-          <input type="email" id="email" class="cadastro__formulario--texto" placeholder="Escolha seu melhor email"
-            required data-tipo="email" />
-          <span id="erro-email"></span>
-        </div>
-
-        <div class="input-container">
-          <label for="" id="label-nome" class="cadastro__formulario--label">Nome</label>
-          <input type="text" id="nome" class="cadastro__formulario--texto" placeholder="Digite seu nome completo"
-            minlength="3" required data-tipo="nome" />
-          <span id="erro-nome"></span>
-        </div>
-
-        <div class="input-container">
-          <label for="" id="label-senha" class="cadastro__formulario--label">Senha</label>
-          <input type="password" id="senha" class="cadastro__formulario--texto senhas" placeholder="Crie uma senha"
-            minlength="6" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$"
-            title="A senha deve conter entre 6 a 12 caracteres, deve conter pelo menos uma letra maiúscula e minúscula, um número e não deve conter símbolos"
-            required data-senha="" data-tipo="senha" />
-          <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i>
-          <span id="erro-senha"></span>
-        </div>
-
-        <div class="input-container">
-          <label for="" id="label-confirm-senha" class="cadastro__formulario--label">Confirme sua senha</label>
-          <input type="password" id="confirm-senha" class="cadastro__formulario--texto senhas"
-            placeholder="Repita a senha criada acima" required data-confirma="" data-tipo="senhaConfirma" />
-          <i id="verConfirmeSenha" class="fa fa-eye" aria-hidden="true"></i>
-          <span id="erro-confirma"></span>
-        </div>
-
-      </fieldset>
-
-      <button class="cadastro__formulario--botao botao-de-forms" id="botao-cadastro">Cadastrar</button>
-    </form>
+    <Formulario />
 
   </main>
   );
