@@ -1,8 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import BotaoForms from "../BotaoForms/BotaoForms";
 import './Formulario.css';
 
 const Formulario = () => {
+
+  const [email, setEmail] = useState('');
+  const [nome, setNome] = useState('');
+  const [senha, setSenha] = useState('');
+  const [confirma, setConfirma] = useState('');
+
+  const aoCadastrar = (evento) => {
+    evento.preventDefault();
+  };
+
+
   return (
     <form class="formulario">
 

@@ -8,6 +8,9 @@ const Inicial = () => {
 
   useEffect(() => {
     document.body.classList.remove('body-cadastro-login');
+    document.body.classList.remove('body-perfil')
+    document.body.classList.remove('body-home')
+    document.body.classList.remove('body-mensagem')
     document.body.classList.add('body-inicial');
   }, []);
 

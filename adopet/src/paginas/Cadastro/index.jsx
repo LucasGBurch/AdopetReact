@@ -6,6 +6,9 @@ const Cadastro = () => {
 
   useEffect(() => {
     document.body.classList.remove('body-inicial')
+    document.body.classList.remove('body-perfil')
+    document.body.classList.remove('body-home')
+    document.body.classList.remove('body-mensagem')
     document.body.classList.add('body-cadastro-login')
   }, []);
 
